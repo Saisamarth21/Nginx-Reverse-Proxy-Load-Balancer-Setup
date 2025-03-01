@@ -195,6 +195,9 @@ To monitor which backend server handled each request, tail the access log:
 sudo tail -f /var/log/nginx/access.log
 ```
 
+![Screenshot 2025-03-02 033258](https://github.com/user-attachments/assets/1d5586b1-45fc-45b7-a1f4-e07d5b491557)
+
+
 In the log entries, look for the `upstream: "..."` field which shows the backend IP (e.g., `"192.0.2.1"` or `"192.0.2.2"`).
 
 ## Summary
