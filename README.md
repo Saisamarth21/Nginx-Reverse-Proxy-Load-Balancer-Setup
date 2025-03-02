@@ -75,6 +75,10 @@ sudo apt install nginx
 This file sets up general server settings, including a custom log format that logs which backend handled each request.
 
 ```bash
+sudo nano /etc/nginx/nginx.conf
+```
+
+```bash
 user www-data;
 worker_processes auto;
 pid /run/nginx.pid;
@@ -118,6 +122,10 @@ http {
 ### Site Configuration (`/etc/nginx/sites-enabled/default`)
 
 This file defines the reverse proxy and load balancing configuration along with a monitoring endpoint. The backend IP addresses are hidden (represented as placeholders).
+
+```bash
+sudo nano /etc/nginx/sites-enabled/default
+```
 
 ```nginx
 # Define the backend servers (hidden IPs)
